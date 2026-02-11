@@ -29,6 +29,7 @@ public class TaskRepositoryTest {
         Task found = repository.findById(1);
 
         assertNotNull(found);
+
         assertEquals("Submit project report", found.getTitle());
     }
 
