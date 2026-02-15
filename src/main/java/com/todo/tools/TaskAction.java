@@ -15,6 +15,10 @@ public enum TaskAction {
         this.command = command;
     }
 
+    public String getCommand(){
+        return command;
+    }
+
     public static TaskAction fromString(String input){
         if(input ==  null){
             throw new IllegalArgumentException("Action input must not be null");
